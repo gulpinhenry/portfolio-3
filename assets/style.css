@@ -1,0 +1,21 @@
+*{
+    
+}
+
+#main-body{
+    overflow-y: hidden;
+}
+
+#mobile-nav{
+    display:none;
+}
+
+
+@media screen and (max-width: 530px){ 
+    #big-nav{
+        display: none;
+    }
+    #mobile-nav{
+        display:block;
+    }
+}
