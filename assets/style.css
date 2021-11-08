@@ -1,11 +1,12 @@
 * {
+    background-color: #f8f8ff;
 }
 
 nav{
     z-index: 7;
 }
 #main-body {
-  background-color: mistyrose;
+  background-color: #f8f8ff;
   display: flex;
   flex-direction: column;
 }
@@ -16,12 +17,12 @@ nav{
   display: block;
   float: right;
   z-index: 5;
-  background-color: mistyrose;
+  background-color: #f8f8ff;
 }
 
 #text-container {
   /* border: 2px solid red; */
-  background-color: mistyrose;
+  background-color: #f8f8ff;
   padding: 10px 10px;
 }
 
@@ -32,7 +33,7 @@ img {
 }
 
 #bio-container {
-  background-color: mistyrose;
+  
   /* position: absolute; */
   padding-top: 30%;
   /* border: solid 2px black; */
@@ -76,9 +77,13 @@ ul {
   border-radius: 50%;
   text-align: center;
 }
+
+#links li a{
+    background-color: transparent;
+}
 #links li span {
   position: relative;
-  /* border: 2px solid red; */
+  background-color: transparent;
   color: white;
   top: 33%;
 }
