@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel = "icon" type="image/jpg" href = "./assets/purplepfp.jpg"/>
+    <link rel="icon" type="image/jpg" href="./assets/purplepfp.jpg" />
     <title>Henry Kam</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/css/uikit.min.css"
     />
-    <link rel = "stylesheet" href = "./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body id = "main-body">
     <nav>
@@ -25,7 +25,9 @@
 
             <div id="big-nav" class="uk-navbar-right">
               <ul class="uk-navbar-nav">
-                <li><a target="_blank" href="./Resume-Berkeley.pdf">Resume</a></li>
+                <li>
+                  <a target="_blank" href="./Resume-Berkeley.pdf">Resume</a>
+                </li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
               </ul>
@@ -33,19 +35,32 @@
 
             <div id="mobile-nav" class="uk-navbar-right">
               <nav class="uk-navbar uk-navbar-container uk-margin">
-                  <a
-                    id="collapse-btn"
-                    class="uk-navbar-toggle"
-                    uk-navbar-toggle-icon
-                    href="#offcanvas-usage"
-                  ></a>
+                <a
+                  id="collapse-btn"
+                  class="uk-navbar-toggle"
+                  uk-navbar-toggle-icon
+                  href="#offcanvas-usage"
+                ></a>
               </nav>
               <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
                 <div class="uk-offcanvas-bar">
                   <ul class="uk-nav uk-nav-default">
-                    <li><a target="_blank" class = "uk-text-lead" href="./Resume-Berkeley.pdf">Resume</a></li>
-                    <li><a class = "uk-text-lead" href="./projects.html">Projects</a></li>
-                    <li><a class = "uk-text-lead" href="./contact.html">Contact</a></li>
+                    <li>
+                      <a
+                        target="_blank"
+                        class="uk-text-lead"
+                        href="./Resume-Berkeley.pdf"
+                        >Resume</a
+                      >
+                    </li>
+                    <li>
+                      <a class="uk-text-lead" href="./projects.html"
+                        >Projects</a
+                      >
+                    </li>
+                    <li>
+                      <a class="uk-text-lead" href="./contact.html">Contact</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -55,9 +70,102 @@
       </div>
     </nav>
 
+    <section id="projects">
+      <h1>Projects</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
+      <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 20">
+          <li>
+              <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                  <img src="./image-demo.gif" alt="" uk-cover>
+              </div>
+              <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #f8f8ff,#f8f8ff"></div>
+              <div class="uk-position-center uk-position-medium uk-text-center">
+                  <div uk-slideshow-parallax="scale: 1,1,0.8">
+                      <h2 uk-slideshow-parallax="x: 200,0,0" style = "color: black;">3D Art Gallery</h2>
+                      <a href = "https://github.com/argibson02/3d-gallery-walk" target = "_blank"><button class="uk-button uk-button-primary" style="background-color: gainsboro;">Learn More</button></a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                  <img src="./hype-demo.gif" alt="" uk-cover>
+              </div>
+              <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+              <div class="uk-position-center uk-position-medium uk-text-center">
+                  <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0" style = "color: black;">Moonbase</h2>
+                    <a href = "https://github.com/gulpinhenry/moonbase" target = "_blank"><button class="uk-button uk-button-primary" style="background-color: gainsboro;">Learn More</button></a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                  <img src="./weatherdashboard.JPG" alt="" uk-cover>
+              </div>
+              <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+              <div class="uk-position-center uk-position-medium uk-text-center">
+                  <div uk-slideshow-parallax="scale: 1,1,0.8">
+                      <h2 uk-slideshow-parallax="x: 200,0,0" style = "color: black;">Weather Dashboard</h2>
+                      <a href = "https://github.com/gulpinhenry/weather-dashboard" target = "_blank"><button class="uk-button uk-button-primary" style="background-color: gainsboro;">Learn More</button></a>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  
+      <a class="uk-position-center-left uk-position-small" href="#" style="background-color: transparent;" uk-slidenav-previous uk-slideshow-item="previous">⬅️</a>
+      <a class="uk-position-center-right uk-position-small" href="#" style="background-color: transparent;" uk-slidenav-next uk-slideshow-item="next">➡️</a>
+  
+  </div>
+    </section>
+    <footer>
+      <ul id="footer-info">
+        <li style="color: black">
+          <a href="mailto:h3nrykam@gmail.com" uk-icon="mail" target="_blank"
+            >Email
+          </a>
+          <a
+            class="uk-text-small"
+            href="mailto:h3nrykam@gmail.com"
+            target="_blank"
+            >h3nrykam@gmail.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/gulpinhenry"
+            uk-icon="github"
+            target="_blank"
+            >Github
+          </a>
+          <a
+            class="uk-text-small"
+            href="https://github.com/gulpinhenry"
+            target="_blank"
+            >gulpinhenry</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/kamhenry/"
+            uk-icon="linkedin"
+            target="_blank"
+            >Linkedin
+          </a>
+          <a
+            class="uk-text-small"
+            href="https://www.linkedin.com/in/kamhenry/"
+            target="_blank"
+            >Henry Kam</a
+          >
+        </li>
+        <li>
+          <p class="uk-text-small uk-text-light">© 2021 by Henry Kam</p>
+        </li>
+      </ul>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit-icons.min.js"></script>
-    <script src = "./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

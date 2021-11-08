@@ -28,7 +28,7 @@ nav {
   padding: 10px 10px;
 }
 
-img {
+#pfp {
   width: 40%;
   margin-left: 30%;
   border-radius: 50%;
@@ -97,6 +97,26 @@ footer {
     border: 2px solid black; */
   /* do something here*/
 }
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+#projects{
+    padding-left: 20px;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.proj-el{
+    margin-top: 100px;
+}
 
 @media screen and (min-width: 768px) {
   #main-body {
@@ -120,7 +140,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  img {
+  #pfp {
     margin: auto auto;
     order: 1;
     transform: scale(0.6);
