@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henry Kam</title>
+    <link rel = "icon" type="image/jpg" href = "./assets/purplepfp.jpg"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/css/uikit.min.css"
@@ -24,7 +25,11 @@
 
             <div id="big-nav" class="uk-navbar-right">
               <ul class="uk-navbar-nav">
-                <li><a target="_blank" href="./assets/Resume-Berkeley.pdf">Resume</a></li>
+                <li>
+                  <a target="_blank" href="./assets/Resume-Berkeley.pdf"
+                    >Resume</a
+                  >
+                </li>
                 <li><a href="./assets/projects.html">Projects</a></li>
                 <li><a href="./assets/contact.html">Contact</a></li>
               </ul>
@@ -32,19 +37,34 @@
 
             <div id="mobile-nav" class="uk-navbar-right">
               <nav class="uk-navbar uk-navbar-container uk-margin">
-                  <a
-                    id="collapse-btn"
-                    class="uk-navbar-toggle"
-                    uk-navbar-toggle-icon
-                    href="#offcanvas-usage"
-                  ></a>
+                <a
+                  id="collapse-btn"
+                  class="uk-navbar-toggle"
+                  uk-navbar-toggle-icon
+                  href="#offcanvas-usage"
+                ></a>
               </nav>
               <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
                 <div class="uk-offcanvas-bar">
                   <ul class="uk-nav uk-nav-default">
-                    <li><a class = "uk-text-lead" href="./assets/Resume-Berkeley.pdf" target="_blank">Resume</a></li>
-                    <li><a class = "uk-text-lead" href="./assets/projects.html">Projects</a></li>
-                    <li><a class = "uk-text-lead" href="./assets/contact.html">Contact</a></li>
+                    <li>
+                      <a
+                        class="uk-text-lead"
+                        href="./assets/Resume-Berkeley.pdf"
+                        target="_blank"
+                        >Resume</a
+                      >
+                    </li>
+                    <li>
+                      <a class="uk-text-lead" href="./assets/projects.html"
+                        >Projects</a
+                      >
+                    </li>
+                    <li>
+                      <a class="uk-text-lead" href="./assets/contact.html"
+                        >Contact</a
+                      >
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -53,27 +73,87 @@
         </div>
       </div>
     </nav>
+    <section id="bio-container">
+      <div id="text-container">
+        <h1 id="title-text" class="uk-animation-fade">Henry Kam</h1>
+        <h3 id="subtitle-text">Student. Scientist. Researcher</h3>
+        <p id="bio-text">
+            &emsp;Aspiring full stack web developer utilizing an engineering philosophy
+          to optimize servers and databases to increase website functionality.
+          Currently attending UC Berkeley’s full stack extension program and
+          pursuing a computer engineering degree at New York University, and
+          hoping to apply my refined proficiency in Java, HTML/CSS, Javascript,
+          and other languages/frameworks to create efficient yet robust
+          applications. Co-authored materials science research papers published
+          in leading journals, I have acquired experience to creatively problem
+          solve and work efficiently in a collaborative environment. Excited to
+          utilize my passion for web development as well as my MERN stack
+          expertise to engineer effective web applications.
+        </p>
+      </div>
 
-    <section id = "bio-container">
-        <h1>Henry Kam</h1>
-        <h3>Some random catch phase</h3>
-        <p>Some random stuff on here idk</p>
-
-        <li id = "links">
-            <ul>
-                <!-- change the shape of the ul to a circle -->
-                
-            </ul>
-
+      <ul id="links">
+        <li>
+          <a href="./assets/Resume-Berkeley.pdf" target="_blank"
+            ><span>Resume</span></a
+          >
         </li>
+        <li>
+          <a href="./assets/projects.html"><span>Projects</span></a>
+        </li>
+        <li>
+          <a href="./assets/contact.html"><span>Contact</span></a>
+        </li>
+      </ul>
+      <img src="assets/pfp.jpg" />
+      <!-- grayscale -->
     </section>
-
-    <section id = "photo-container">
-
-    </section>
-
     <footer>
-        <!-- just flexbox it -->
+      <ul id="footer-info">
+        <li>
+          <a href="mailto:h3nrykam@gmail.com" uk-icon="mail" target="_blank"
+            >Email
+          </a>
+          <a
+            class="uk-text-small"
+            href="mailto:h3nrykam@gmail.com"
+            target="_blank"
+            >h3nrykam@gmail.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/gulpinhenry"
+            uk-icon="github"
+            target="_blank"
+            >Github
+          </a>
+          <a
+            class="uk-text-small"
+            href="https://github.com/gulpinhenry"
+            target="_blank"
+            >gulpinhenry</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/kamhenry/"
+            uk-icon="linkedin"
+            target="_blank"
+            >Linkedin
+          </a>
+          <a
+            class="uk-text-small"
+            href="https://www.linkedin.com/in/kamhenry/"
+            target="_blank"
+            >Henry Kam</a
+          >
+        </li>
+        <li>
+          <p class="uk-text-small uk-text-light">© 2021 by Henry Kam</p>
+        </li>
+      </ul>
+      <!-- just flexbox it -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit.min.js"></script>
