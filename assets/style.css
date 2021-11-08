@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 * {
-    background-color: #f8f8ff;
+  background-color: #f8f8ff;
+  font-family: "Cardo", serif;
 }
 
-nav{
-    z-index: 7;
+nav {
+  z-index: 7;
 }
 #main-body {
   background-color: #f8f8ff;
@@ -33,7 +35,6 @@ img {
 }
 
 #bio-container {
-  
   /* position: absolute; */
   padding-top: 30%;
   /* border: solid 2px black; */
@@ -56,7 +57,8 @@ img {
 #bio-text {
   /* format text font later */
   text-align: justify;
-  padding: -15px 40px;
+  margin: 0 20px;
+  padding: -15px 60px;
   /* border: 2px solid black; */
 }
 
@@ -78,8 +80,8 @@ ul {
   text-align: center;
 }
 
-#links li a{
-    background-color: transparent;
+#links li a {
+  background-color: transparent;
 }
 #links li span {
   position: relative;
@@ -89,16 +91,16 @@ ul {
 }
 
 footer {
-    padding-top: 20px;
-    /* position: fixed;
+  padding-top: 20px;
+  /* position: fixed;
     bottom: 0;
     border: 2px solid black; */
   /* do something here*/
 }
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 768px) {
   #main-body {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   #big-nav {
@@ -110,6 +112,63 @@ footer {
   }
 
   #bio-container {
-    /* height: 80vh; */
+    padding-top: 80px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  img {
+    margin: auto auto;
+    order: 1;
+    transform: scale(0.6);
+    flex-basis: 45%;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  #text-container {
+      padding-top: 10%;
+    flex-basis: 50%;
+    width: 30%;
+    order: 2;
+    padding-right: 80px;
+    margin-left: -150px;
+    /* padding-left: -20px; */
+  }
+  #links {
+    order: 3;
+    min-width: 50%;
+    margin: -20% 43%;
+    background-color: transparent;
+  }
+  #links li {
+    height: 120px;
+    width: 120px;
+    margin: 20px 5%;
+    border-radius: 50%;
+    text-align: center;
+  }
+  #links li span {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    top: 40%;
+  }
+  footer {
+    position: absolute;
+    top: 90%;
+    width: 100vw;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  footer li {
+    display: flex;
+    flex-direction: column;
   }
 }
